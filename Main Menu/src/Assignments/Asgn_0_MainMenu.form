@@ -28,7 +28,10 @@
               <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                  <Component id="btn_1_NumberAddition" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                      <Component id="m_btnHelloWorld" alignment="0" max="32767" attributes="0"/>
+                      <Component id="btn_1_NumberAddition" alignment="0" max="32767" attributes="0"/>
+                  </Group>
               </Group>
               <EmptySpace pref="174" max="32767" attributes="0"/>
           </Group>
@@ -41,7 +44,9 @@
               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="btn_1_NumberAddition" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="208" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="m_btnHelloWorld" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="179" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -63,6 +68,14 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Select an Assignment to view."/>
       </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="m_btnHelloWorld">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="3 - SayHello"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="m_btnHelloWorldActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
