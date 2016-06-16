@@ -46,7 +46,7 @@ public class Asgn_0_MainMenu extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel1.setText("Select an Assignment to view.");
 
-        m_btnHelloWorld.setText("3 - SayHello");
+        m_btnHelloWorld.setText("3 - Hello, World!");
         m_btnHelloWorld.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 m_btnHelloWorldActionPerformed(evt);
@@ -82,15 +82,15 @@ public class Asgn_0_MainMenu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
   private void btn_1_NumberAdditionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_1_NumberAdditionActionPerformed
-    Asgn_1_NumberAdditionUI naf = new Asgn_1_NumberAdditionUI();
+    NumberAdditionUI naf = new NumberAdditionUI();
     naf.setLocationRelativeTo(null);
     naf.setVisible(true);
   }//GEN-LAST:event_btn_1_NumberAdditionActionPerformed
 
     private void m_btnHelloWorldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m_btnHelloWorldActionPerformed
-    Asgn_3_Hello_world shw = new Asgn_3_Hello_world();
-    shw.setLocationRelativeTo(null);
-    shw.setVisible(true);
+    Asgn_3_Hello_world hwf = new Asgn_3_Hello_world();
+    hwf.setLocationRelativeTo(null);
+    hwf.setVisible(true);
     }//GEN-LAST:event_m_btnHelloWorldActionPerformed
 
   /**

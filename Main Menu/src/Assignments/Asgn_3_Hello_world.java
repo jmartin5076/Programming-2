@@ -28,18 +28,18 @@ public class Asgn_3_Hello_world extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        m_tbName = new javax.swing.JTextField();
+        m_tfName = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         m_lblGreeting = new javax.swing.JLabel();
         m_btnExit = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setLabelFor(m_tbName);
+        jLabel1.setLabelFor(m_tfName);
         jLabel1.setText("Name");
         jLabel1.setToolTipText("");
 
-        m_tbName.setToolTipText("Enter the name of the person you want to greet.");
+        m_tfName.setToolTipText("Enter the name of the person you want to greet.");
 
         jButton1.setText("Say Hello");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -68,7 +68,7 @@ public class Asgn_3_Hello_world extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel1)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(m_tbName, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(m_tfName, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(108, 108, 108)
                         .addComponent(m_lblGreeting, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -84,7 +84,7 @@ public class Asgn_3_Hello_world extends javax.swing.JFrame {
                 .addGap(57, 57, 57)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(m_tbName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(m_tfName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(29, 29, 29)
                 .addComponent(jButton1)
                 .addGap(63, 63, 63)
@@ -98,7 +98,7 @@ public class Asgn_3_Hello_world extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        String Name = m_tbName.getText();
+        String Name = m_tfName.getText();
         if (Name.equals(""))
             m_lblGreeting.setText("Hello, World!");
         else 
@@ -150,6 +150,6 @@ public class Asgn_3_Hello_world extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JButton m_btnExit;
     private javax.swing.JLabel m_lblGreeting;
-    private javax.swing.JTextField m_tbName;
+    private javax.swing.JTextField m_tfName;
     // End of variables declaration//GEN-END:variables
 }
