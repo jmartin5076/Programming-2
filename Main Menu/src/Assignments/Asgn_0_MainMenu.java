@@ -31,6 +31,7 @@ public class Asgn_0_MainMenu extends javax.swing.JFrame {
         btn_1_NumberAddition = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         m_btnHelloWorld = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Programming 2 - Main Menu");
@@ -53,6 +54,13 @@ public class Asgn_0_MainMenu extends javax.swing.JFrame {
             }
         });
 
+        jButton1.setText("7 - Tip Calculator");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -62,6 +70,7 @@ public class Asgn_0_MainMenu extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel1)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(jButton1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(m_btnHelloWorld, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btn_1_NumberAddition, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap(174, Short.MAX_VALUE))
@@ -75,7 +84,9 @@ public class Asgn_0_MainMenu extends javax.swing.JFrame {
                 .addComponent(btn_1_NumberAddition)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(m_btnHelloWorld)
-                .addContainerGap(179, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton1)
+                .addContainerGap(147, Short.MAX_VALUE))
         );
 
         pack();
@@ -92,6 +103,12 @@ public class Asgn_0_MainMenu extends javax.swing.JFrame {
     hwf.setLocationRelativeTo(null);
     hwf.setVisible(true);
     }//GEN-LAST:event_m_btnHelloWorldActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        TipCalculatorUI tcf = new TipCalculatorUI();
+        tcf.setLocationRelativeTo(null);
+        tcf.setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
   /**
    * @param args the command line arguments
@@ -131,6 +148,7 @@ public class Asgn_0_MainMenu extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn_1_NumberAddition;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JButton m_btnHelloWorld;
     // End of variables declaration//GEN-END:variables
