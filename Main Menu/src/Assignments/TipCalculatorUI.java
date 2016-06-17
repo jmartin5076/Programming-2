@@ -165,12 +165,15 @@ public class TipCalculatorUI extends javax.swing.JFrame {
     }//GEN-LAST:event_m_btnClearActionPerformed
 
     private void m_btnCalculateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m_btnCalculateActionPerformed
+        //establishing the variables
         float num1,num2,tip,total;
+        //setting the variables to their appropriate values
         num1 = Float.parseFloat(m_tfDinnerTotal.getText());
         num2 = Float.parseFloat(m_tfTipPercent.getText());
-        tip = num1*num2;
-        m_tfTip.setText(String.valueOf(tip));
+        tip = num1*num2;  
         total = num1+tip;
+        //changing the text values in the text fields
+        m_tfTip.setText(String.valueOf(tip));
         m_tfTotal.setText(String.valueOf(total));
     }//GEN-LAST:event_m_btnCalculateActionPerformed
 
