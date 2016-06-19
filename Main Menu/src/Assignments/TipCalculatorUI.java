@@ -5,17 +5,24 @@
  */
 package Assignments;
 
+import DinnerBill.DinnerBill;
+
 /**
  *
- * @author Jeremy
+ * @author Jeremy Martin
  */
 public class TipCalculatorUI extends javax.swing.JFrame {
 
     /**
      * Creates new form TipCalculatorUI
      */
+    
+    DinnerBill dinnerBill = new DinnerBill();
+    
     public TipCalculatorUI() {
         initComponents();
+        m_tfDinnerTotal.setText(dinnerBill.getTotal().toString());
+        m_tfTipPercent.setText(dinnerBill.getPercent().toString());
     }
 
     /**
@@ -49,13 +56,11 @@ public class TipCalculatorUI extends javax.swing.JFrame {
 
         jLabel2.setText("Dinner Total:");
 
-        jLabel3.setText("Tip Percent(decimal form);");
+        jLabel3.setText("Tip Percent:");
 
         jLabel4.setText("Tip:");
 
         jLabel5.setText("Total:");
-
-        m_tfTipPercent.setText(".15");
 
         m_tfTip.setText("0");
 
@@ -96,7 +101,7 @@ public class TipCalculatorUI extends javax.swing.JFrame {
                     .addComponent(m_tfTotal)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(m_btnClear)
-                        .addGap(0, 140, Short.MAX_VALUE)))
+                        .addGap(0, 210, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -158,23 +163,20 @@ public class TipCalculatorUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void m_btnClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m_btnClearActionPerformed
-        m_tfDinnerTotal.setText("");
-        m_tfTipPercent.setText(".15");
+        m_tfDinnerTotal.setText(dinnerBill.getTotal().toString());
+        m_tfTipPercent.setText(dinnerBill.getPercent().toString());
         m_tfTip.setText("0");
         m_tfTotal.setText("0");
     }//GEN-LAST:event_m_btnClearActionPerformed
 
     private void m_btnCalculateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m_btnCalculateActionPerformed
-        //establishing the variables
-        float num1,num2,tip,total;
-        //setting the variables to their appropriate values
-        num1 = Float.parseFloat(m_tfDinnerTotal.getText());
-        num2 = Float.parseFloat(m_tfTipPercent.getText());
-        tip = num1*num2;  
-        total = num1+tip;
-        //changing the text values in the text fields
+        float total,percent,tip;
+        total = Float.parseFloat(m_tfDinnerTotal.getText());
+        percent = Float.parseFloat(m_tfTipPercent.getText());
+        tip = dinnerBill.CalculateTip(total, percent);
+        dinnerBill.CalculateTotal(total, tip);
         m_tfTip.setText(String.valueOf(tip));
-        m_tfTotal.setText(String.valueOf(total));
+        m_tfTotal.setText(dinnerBill.getGrandTotal().toString());
     }//GEN-LAST:event_m_btnCalculateActionPerformed
 
     private void m_btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m_btnExitActionPerformed

@@ -83,7 +83,7 @@
                       <Component id="m_tfTotal" alignment="0" max="32767" attributes="0"/>
                       <Group type="102" attributes="0">
                           <Component id="m_btnClear" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="0" pref="140" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="210" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
@@ -131,7 +131,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel3">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Tip Percent(decimal form);"/>
+            <Property name="text" type="java.lang.String" value="Tip Percent:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel4">
@@ -147,9 +147,6 @@
         <Component class="javax.swing.JTextField" name="m_tfDinnerTotal">
         </Component>
         <Component class="javax.swing.JTextField" name="m_tfTipPercent">
-          <Properties>
-            <Property name="text" type="java.lang.String" value=".15"/>
-          </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="m_tfTip">
           <Properties>
