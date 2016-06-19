@@ -16,7 +16,7 @@ public class DinnerBill {
     public void DinnerBill()
     {
         total = 0.0f;
-        percent = 0;
+        percent = 0.0f;
     }
     
     public Float getTotal()
