@@ -13,7 +13,7 @@ public class DinnerBill {
     
     float total,percent,tip,grandTotal;
     
-    public void DinnerBill()
+    public DinnerBill()
     {
         total = 0.0f;
         percent = 0.0f;
@@ -36,13 +36,9 @@ public class DinnerBill {
         return tip;
     }
   
-    public void CalculateTotal (float total,float tip)
+    public Float CalculateTotal (float total,float tip)
     {
         grandTotal = total+tip;
-    }
-    
-    public Float getGrandTotal()
-    {
         return grandTotal;
     }
 }
