@@ -32,8 +32,9 @@ public class Asgn_0_MainMenu extends javax.swing.JFrame {
         btn_1_NumberAddition = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         m_btnHelloWorld = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        m_btnTipCalc = new javax.swing.JButton();
+        m_btnWorldClock = new javax.swing.JButton();
+        m_btnCardCollector = new javax.swing.JButton();
 
         jButton2.setText("jButton2");
 
@@ -58,17 +59,24 @@ public class Asgn_0_MainMenu extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setText("7 - Tip Calculator");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        m_btnTipCalc.setText("7 - Tip Calculator");
+        m_btnTipCalc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                m_btnTipCalcActionPerformed(evt);
             }
         });
 
-        jButton3.setText("10 - World Clock");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        m_btnWorldClock.setText("10 - World Clock");
+        m_btnWorldClock.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                m_btnWorldClockActionPerformed(evt);
+            }
+        });
+
+        m_btnCardCollector.setText("11 - Card Collector");
+        m_btnCardCollector.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                m_btnCardCollectorActionPerformed(evt);
             }
         });
 
@@ -80,12 +88,15 @@ public class Asgn_0_MainMenu extends javax.swing.JFrame {
                 .addGap(21, 21, 21)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel1)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(jButton3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(m_btnHelloWorld, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btn_1_NumberAddition, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addContainerGap(174, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(m_btnWorldClock, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(m_btnTipCalc, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(m_btnHelloWorld, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btn_1_NumberAddition, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(42, 42, 42)
+                        .addComponent(m_btnCardCollector, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(25, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -93,13 +104,15 @@ public class Asgn_0_MainMenu extends javax.swing.JFrame {
                 .addGap(34, 34, 34)
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
-                .addComponent(btn_1_NumberAddition)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btn_1_NumberAddition)
+                    .addComponent(m_btnCardCollector))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(m_btnHelloWorld)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton1)
+                .addComponent(m_btnTipCalc)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton3)
+                .addComponent(m_btnWorldClock)
                 .addContainerGap(115, Short.MAX_VALUE))
         );
 
@@ -118,17 +131,23 @@ public class Asgn_0_MainMenu extends javax.swing.JFrame {
     hwf.setVisible(true);
     }//GEN-LAST:event_m_btnHelloWorldActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void m_btnTipCalcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m_btnTipCalcActionPerformed
         TipCalculatorUI tcf = new TipCalculatorUI();
         tcf.setLocationRelativeTo(null);
         tcf.setVisible(true);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_m_btnTipCalcActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void m_btnWorldClockActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m_btnWorldClockActionPerformed
         Asgn_10_WorldClock wcf = new Asgn_10_WorldClock();
         wcf.setLocationRelativeTo(null);
         wcf.setVisible(true);
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_m_btnWorldClockActionPerformed
+
+    private void m_btnCardCollectorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m_btnCardCollectorActionPerformed
+        CardCollectorUI ccf = new CardCollectorUI();
+        ccf.setLocationRelativeTo(null);
+        ccf.setVisible(true);
+    }//GEN-LAST:event_m_btnCardCollectorActionPerformed
 
   /**
    * @param args the command line arguments
@@ -168,10 +187,11 @@ public class Asgn_0_MainMenu extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn_1_NumberAddition;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton m_btnCardCollector;
     private javax.swing.JButton m_btnHelloWorld;
+    private javax.swing.JButton m_btnTipCalc;
+    private javax.swing.JButton m_btnWorldClock;
     // End of variables declaration//GEN-END:variables
 }

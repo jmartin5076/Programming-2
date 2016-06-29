@@ -5,8 +5,8 @@
  */
 package Assignments;
 
-import Clock.Clock;
-import Clock.WorldClock;
+import Classes.Clock;
+import Classes.WorldClock;
 
 /**
  *

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Clock;
+package Classes;
 
 /**
  *
@@ -64,9 +64,7 @@ public class Clock {
             hours = WorldClock.getHours(offset);
 
             if (hours>12)
-            {
-                hours-=12;
-                
+            {                
                 if(AM_PM==1)
                 {
                     day = "AM";
@@ -75,6 +73,8 @@ public class Clock {
                 {
                     day ="PM";
                 }
+            
+                hours-=12;
             }
             
             if (hours<1)

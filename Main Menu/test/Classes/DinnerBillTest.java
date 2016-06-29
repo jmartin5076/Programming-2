@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package DinnerBill;
+package Classes;
 
+import Classes.DinnerBill;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;

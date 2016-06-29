@@ -5,7 +5,7 @@
  */
 package Assignments;
 
-import DinnerBill.DinnerBill;
+import Classes.DinnerBill;
 
 /**
  *
