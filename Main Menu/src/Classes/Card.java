@@ -22,30 +22,6 @@ public class Card {
     
     public Float getValue()
     {
-        Float Multiplier = 1.0f;
-        
-        if("Near Mint".equals(CardCondition))
-        {
-            Multiplier = 5.0f;
-        }
-        if("Lightly Played".equals(CardCondition))
-        {
-            Multiplier = 2.0f;
-        }
-        if("Moderatly Played".equals(CardCondition))
-        {
-            Multiplier = 1.0f;
-        }
-        if("Heavily Played".equals(CardCondition))
-        {
-            Multiplier = 0.5f;
-        }
-        if("Damaged".equals(CardCondition))
-        {
-            Multiplier = 0.25f;
-        }
-        
-        CardValue = CardValue*Multiplier;
         return CardValue;
     }
 }
